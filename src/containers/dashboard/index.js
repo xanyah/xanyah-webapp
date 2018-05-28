@@ -1,10 +1,10 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { connect } from 'react-redux'
+import { Link } from 'react-router-dom'
 
-import './style.css';
+import './style.css'
 
-import Navbar from '../../components/navbar';
+import Navbar from '../../components/navbar'
 
 const Dashboard = ({ stores }) => (
   <div className="dashboard">
@@ -27,10 +27,10 @@ const Dashboard = ({ stores }) => (
       </div>
     </div>
   </div>
-);
+)
 
 const mapStateToProps = ({ stores: { stores } }) => ({
-  stores
-});
+  stores,
+})
 
-export default connect(mapStateToProps)(Dashboard);
+export default connect(mapStateToProps)(Dashboard)

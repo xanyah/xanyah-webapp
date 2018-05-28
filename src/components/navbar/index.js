@@ -1,9 +1,9 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React from 'react'
+import { NavLink } from 'react-router-dom'
 
-import './style.css';
+import './style.css'
 
-import logo from '../../images/logo.svg';
+import logo from '../../images/logo.svg'
 
 export default () => (
   <div className="navbar">
@@ -12,4 +12,4 @@ export default () => (
       Dashboard
     </NavLink>
   </div>
-);
+)

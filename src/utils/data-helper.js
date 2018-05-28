@@ -7,4 +7,4 @@ export const slugify = text =>
     .replace(/[^\w-]+/g, '')
     .replace(/--+/g, '-')
     .replace(/^-+/, '')
-    .replace(/-+$/, '');
+    .replace(/-+$/, '')

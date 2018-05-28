@@ -1,39 +1,39 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import { withRouter } from 'react-router';
-import Select from 'react-select';
+import React from 'react'
+import { connect } from 'react-redux'
+import { withRouter } from 'react-router'
+import Select from 'react-select'
 
-import './style.css';
+import './style.css'
 
-import Navbar from '../../components/navbar';
-import { countryList } from '../../utils/countries-helper';
-import { slugify } from '../../utils/data-helper';
-import { createStore } from '../../actions/stores';
+import Navbar from '../../components/navbar'
+import { countryList } from '../../utils/countries-helper'
+import { slugify } from '../../utils/data-helper'
+import { createStore } from '../../actions/stores'
 
 class Dashboard extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
 
     this.state = {
       address: '',
       country: '',
       key: '',
-      name: ''
-    };
+      name: '',
+    }
   }
 
   handleSubmit(e) {
-    const { address, country, key, name } = this.state;
-    e.preventDefault();
+    const { address, country, key, name } = this.state
+    e.preventDefault()
 
     this.props.createStore({
       address,
       country: country.value,
       key,
-      name
-    });
+      name,
+    })
 
-    this.props.history.push('/');
+    this.props.history.push('/')
   }
 
   render() {
@@ -47,7 +47,7 @@ class Dashboard extends React.Component {
               onChange={e =>
                 this.setState({
                   key: slugify(e.target.value),
-                  name: e.target.value
+                  name: e.target.value,
                 })
               }
               placeholder="Name"
@@ -76,18 +76,18 @@ class Dashboard extends React.Component {
           </form>
         </div>
       </div>
-    );
+    )
   }
 }
 
 const mapStateToProps = ({ stores: { stores } }) => ({
-  stores
-});
+  stores,
+})
 
 const mapDispatchToProps = dispatch => ({
-  createStore: params => dispatch(createStore(params))
-});
+  createStore: params => dispatch(createStore(params)),
+})
 
 export default withRouter(
   connect(mapStateToProps, mapDispatchToProps)(Dashboard)
-);
+)

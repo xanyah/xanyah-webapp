@@ -28,5 +28,5 @@ export const countryList = [
   { label: 'Slovakia', value: 'SK' },
   { label: 'Sweden', value: 'SE' },
   { label: 'United Kingdom', value: 'UK' },
-  { label: 'United Kingdom', value: 'GB' }
-];
+  { label: 'United Kingdom', value: 'GB' },
+]

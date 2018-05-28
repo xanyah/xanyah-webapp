@@ -1,35 +1,35 @@
-import React from 'react';
+import React from 'react'
 
-import './style.css';
+import './style.css'
 
-import logo from '../../images/logo.svg';
-import { xanyahApi } from '../../utils/xanyah-api';
+import logo from '../../images/logo.svg'
+import { xanyahApi } from '../../utils/xanyah-api'
 
 export default class SignIn extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
 
     this.state = {
       email: '',
       error: false,
-      password: ''
-    };
+      password: '',
+    }
   }
 
   handleSubmit(e) {
-    const { email, password } = this.state;
-    e.preventDefault();
+    const { email, password } = this.state
+    e.preventDefault()
 
-    this.setState({ error: false });
+    this.setState({ error: false })
 
     xanyahApi
       .post('auth/sign_in', { email, password })
       .then(() => (window.location = '/'))
-      .catch(() => this.setState({ error: true }));
+      .catch(() => this.setState({ error: true }))
   }
 
   render() {
-    const { email, error, password } = this.state;
+    const { email, error, password } = this.state
     return (
       <div className="sign-in">
         <img src={logo} alt="logo" />
@@ -50,6 +50,6 @@ export default class SignIn extends React.Component {
           <input type="submit" />
         </form>
       </div>
-    );
+    )
   }
 }
