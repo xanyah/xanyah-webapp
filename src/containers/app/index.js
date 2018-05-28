@@ -16,7 +16,11 @@ class App extends React.Component {
     xanyahApi
       .get('auth/validate_token')
       .then(() => this.props.getStores())
-      .catch(() => this.props.goTo('/sign-in'))
+      .catch(() => {
+        if (!['/sign-in', '/sign-up'].includes(window.location.pathname)) {
+          this.props.goTo('/sign-in')
+        }
+      })
   }
 
   shouldComponentUpdate() {
