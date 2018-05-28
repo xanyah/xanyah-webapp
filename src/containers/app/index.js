@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { Route, withRouter } from 'react-router-dom'
-import { push } from 'react-router-redux'
+import { replace } from 'react-router-redux'
 import PropTypes from 'prop-types'
 
 import Dashboard from '../dashboard'
@@ -48,7 +48,7 @@ App.propTypes = {
 
 const mapDispatchToProps = dispatch => ({
   getStores: () => dispatch(getStores()),
-  goTo: route => dispatch(push(route)),
+  goTo: route => dispatch(replace(route)),
 })
 
 export default withRouter(connect(null, mapDispatchToProps)(App))
