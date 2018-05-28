@@ -1,0 +1,59 @@
+.dashboard .table-header {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.dashboard .table-header h3 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.dashboard .table-header a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.dashboard .stores {
+  border: 1px solid #dfdfdf;
+  border-bottom: 0;
+  border-radius: 4px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+.dashboard .stores .store {
+  align-items: center;
+  border-bottom: 1px solid #dfdfdf;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.dashboard .stores .store > div {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 1rem 2rem;
+}
+
+.dashboard .stores .store a {
+  color: #4c1cf7;
+  text-decoration: none;
+}
+
+.dashboard .stores .store .name {
+  flex: 0.5;
+}
+
+.dashboard .stores .store .country {
+  flex: 0.2;
+  justify-content: flex-end;
+}
+
+.dashboard .stores .store .created-at {
+  flex: 0.3;
+  justify-content: flex-end;
+}
