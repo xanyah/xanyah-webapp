@@ -1,0 +1,43 @@
+.store-plan .page-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: inherit;
+}
+
+.store-plan .plans {
+  display: flex;
+  flex-direction: row;
+}
+
+.store-plan .plans .plan {
+  align-items: center;
+  border: 1px solid #dfdfdf;
+  border-radius: 4px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, .03);
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  padding: 1rem;
+}
+
+.store-plan .plans .plan h2 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.store-plan .plans .plan h3 {
+  opacity: .3;
+  text-align: center;
+}
+
+.store-plan .plans .plan ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.store-plan .checkout-form {
+  height: 20rem;
+}

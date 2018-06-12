@@ -5,34 +5,35 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 4rem 0 0;
   font-family: Poppins, sans-serif;
   font-size: 1rem;
   line-height: 1.5;
+  margin: 0;
+  padding: 4rem 0 0;
 }
 
 button:disabled {
-  opacity: 0.5;
+  opacity: .5;
 }
 
 .page-container {
-  width: 100%;
-  max-width: 60rem;
   margin: 0 auto;
+  max-width: 60rem;
+  width: 100%;
 }
 
 input[type='submit'] {
-  background-image: linear-gradient(
-    -206deg,
-    #6195fa 0%,
-    #6194fa 1%,
-    #4c1cf7 50%
-  );
+  background-image:
+    linear-gradient(
+      -206deg,
+      #6195fa 0%,
+      #6194fa 1%,
+      #4c1cf7 50%
+    );
   border: 0;
   border-radius: 4px;
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
   outline: 0;
-  padding: 0.6rem 2rem;
+  padding: .6rem 2rem;
 }

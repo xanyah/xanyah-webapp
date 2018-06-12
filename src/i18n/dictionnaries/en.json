@@ -1,0 +1,49 @@
+{
+  "pages": {
+    "dashboard": {
+      "createStore": "Create a store",
+      "storesCount": "Your stores (%{count})",
+      "title": "Dashboard"
+    },
+    "storeNew": {
+      "form": {
+        "address": "Address",
+        "country": "Country",
+        "key": "Key",
+        "name": "Name",
+        "title": "Create a store"
+      }
+    },
+    "storePlan": {
+      "form": {
+        "maxUsers": "%{count} collaborators max.",
+        "maxVariants": "%{count} articles max.",
+        "title": "Select a plan",
+        "unlimitedUsers": "Unlimited collaborators",
+        "unlimitedVariants": "Unlimited products"
+      }
+    }
+  },
+  "plans": {
+    "basic": {
+      "description": "For growing businesses",
+      "title": "Basic"
+    },
+    "diamond": {
+      "description": "For grew businesses",
+      "title": "Diamond"
+    },
+    "free": {
+      "description": "For starting businesses",
+      "title": "Free"
+    },
+    "gold": {
+      "description": "For working businesses",
+      "title": "Gold"
+    },
+    "periods": {
+      "monthly": "Monthly",
+      "yearly": "Yearly"
+    }
+  }
+}

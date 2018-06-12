@@ -4,7 +4,7 @@ import { camelizeKeys, decamelizeKeys } from 'humps'
 const authHeaders = ['access-token', 'client', 'expiry', 'token-type', 'uid']
 
 export const xanyahApi = axios.create({
-  baseURL: 'https://xanyah-staging.herokuapp.com/',
+  baseURL: process.env.REACT_APP_API_BASE_URL,
   timeout: 5000,
 })
 

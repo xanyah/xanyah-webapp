@@ -6,12 +6,12 @@
 }
 
 .dashboard .table-header h3 {
-  font-size: 0.8rem;
+  font-size: .8rem;
   text-transform: uppercase;
 }
 
 .dashboard .table-header a {
-  font-size: 0.8rem;
+  font-size: .8rem;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -20,7 +20,7 @@
   border: 1px solid #dfdfdf;
   border-bottom: 0;
   border-radius: 4px;
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.03);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .03);
 }
 
 .dashboard .stores .store {
@@ -45,15 +45,15 @@
 }
 
 .dashboard .stores .store .name {
-  flex: 0.5;
+  flex: .5;
 }
 
 .dashboard .stores .store .country {
-  flex: 0.2;
+  flex: .2;
   justify-content: flex-end;
 }
 
 .dashboard .stores .store .created-at {
-  flex: 0.3;
+  flex: .3;
   justify-content: flex-end;
 }

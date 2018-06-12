@@ -1,6 +1,6 @@
 .navbar {
   align-items: center;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .3);
   display: flex;
   flex-direction: row;
   height: 4rem;
@@ -8,6 +8,7 @@
   position: fixed;
   right: 0;
   top: 0;
+  z-index: 10;
 }
 
 .navbar img {
@@ -17,7 +18,7 @@
 
 .navbar a {
   align-items: center;
-  color: #333;
+  color: #333333;
   display: flex;
   font-weight: 600;
   height: 100%;
@@ -25,7 +26,7 @@
 }
 
 .navbar a:hover {
-  border-bottom: 0.2rem solid #4c1cf7;
+  border-bottom: .2rem solid #4c1cf7;
 }
 
 .navbar a.active {

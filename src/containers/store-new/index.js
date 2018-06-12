@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router'
 import Select from 'react-select'
+import { I18n } from 'react-redux-i18n'
 
 import './style.css'
 
@@ -42,7 +43,7 @@ class Dashboard extends React.Component {
         <Navbar />
         <div className="page-container">
           <form onSubmit={e => this.handleSubmit(e)}>
-            <h1>Create a store</h1>
+            <h1>{I18n.t('pages.storeNew.form.title')}</h1>
             <input
               onChange={e =>
                 this.setState({
@@ -50,14 +51,14 @@ class Dashboard extends React.Component {
                   name: e.target.value,
                 })
               }
-              placeholder="Name"
+              placeholder={I18n.t('pages.storeNew.form.name')}
               type="text"
               value={this.state.name}
             />
             <input
               onChange={e => this.setState({ key: slugify(e.target.value) })}
               type="text"
-              placeholder="Key"
+              placeholder={I18n.t('pages.storeNew.form.key')}
               value={this.state.key}
             />
             <Select
@@ -65,11 +66,11 @@ class Dashboard extends React.Component {
               value={this.state.country}
               onChange={e => this.setState({ country: e })}
               options={countryList}
-              placeholder="Country"
+              placeholder={I18n.t('pages.storeNew.form.country')}
             />
             <textarea
               onChange={e => this.setState({ address: e.target.value })}
-              placeholder="Address">
+              placeholder={I18n.t('pages.storeNew.form.address')}>
               {this.state.address}
             </textarea>
             <input type="submit" />
